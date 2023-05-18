@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.wrap {
+    width: 1300px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+.content {
+    height: 300px;
+    border-radius: 20px;
+    padding: 70px 0px 10px 0px;
+    background-image: url("../image/visit_image.png");
+    background-position: 1% 70%;
+    background-size: cover;
+}
+
+.box_1 {
+    width: 50%;
+    margin-left: 680px;
+    align-items: start;
+    border-radius: 20px;
+}
+
+#name {
+    height: 30px;
+    border-radius: 11px;
+    text-align: center;
+}
+
+
+#comment {
+    border-radius: 11px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    margin-top: -10px;
+
+}
+
+#password {
+    border-radius: 10px;
+    height: 30px;
+    text-align: center;
+}
+
+.mybtn {
+    margin-top: 20px;
+    width: 200px;
+    height: 30px;
+    border-radius: 11px;
+    background-color: rgb(217, 217, 217);
+}
+
+.top {
+    width: 100%;
+    display: flex;
+}
+
+.content_title {
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.comment_list {
+    /* display:table; */
+    width: 101%;
+    height: 550px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+
+.name_part {
+    /* display:table-cell;
+    vertical-align: middle; */
+    width: 15%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+    background-color: rgb(236, 236, 236);
+}
+
+.name_plus {
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    width: 14.9%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+}
+
+.comment_part {
+
+    width: 70%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+    background-color: rgb(236, 236, 236);
+}
+
+.comment_plus {
+    float: left;
+    width: 69.55%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+}
+
+.time_part {
+
+    width: 15%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+    background-color: rgb(236, 236, 236);
+}
+
+.time_plus {
+    float: left;
+
+    width: 15%;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid;
+}
+
+#delete {
+    border: 0;
+    float: right;
+    margin-top: 20px;
+    margin-right: 5px;
+    background-color: aliceblue;
+}

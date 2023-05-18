@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        @font-face {
+            font-family: 'Arita-buri-SemiBold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .base {
+
+            width: 60%;
+            height: 100%;
+            margin: 0 auto 0 auto;
+        }
+
+        .mytitle {
+            background-color: green;
+            width: 100%;
+
+        }
+        .mypost {
+            margin-top: 30px;
+            padding: 100px;
+            width: 100%;
+            height: 900px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 7px 0px gray;
+        }
+
+        .member_detail {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+
+        }
+
+        .top_image {
+            padding-top: 25px;
+            margin-top: 5%;
+            background-image: url(../image/member_card_image.png);
+            width: 100%;
+            height: 250px;
+            background-size: cover;
+            background-position: 1% 85%;
+            border-radius: 15px;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Arita-buri-SemiBold';
+            font-size: 60px;
+            line-height: 58px;
+            font-weight: 800;
+            padding-bottom: 20px;
+
+        }
+
+        header h1 span {
+            display: block;
+            color: #000000;
+            font-size: 20px;
+            margin-bottom: 0px;
+
+        }
+        .detail_view{
+            margin-bottom: 10px;
+            height: 170px;
+        }
+        .subtitle {
+            font-family: 'Arita-buri-SemiBold';
+            text-align: center;
+        }
+
+        .comment_post {
+            margin-top: 20px;
+        }
+
+        .btn-dark {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 85%;
+        }
+
+        .back {
+            text-align: center;
+            border: 1px solid;
+            margin-left: 85%;
+            text-decoration: none;
+        }
+        .mycards{
+
+            width: 100%;
+            height: 160px;
+        }
+        .card{
+            height: 75px;
+            margin-bottom: 5px;
+        }

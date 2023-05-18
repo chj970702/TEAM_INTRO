@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*--- page 1 ---*/
+h3 {
+    font-size: 300%;
+
+}
+
+#page-1 {
+    background-image: url(../image/suzume_lntro.jpg);
+    background-size: cover;
+}
+
+h1.spring {
+    font-size: 600%;
+}
+
+div#title {
+
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 0%;
+    padding: 100px 0px 0px 0px;
+}
+
+div#subtitle {
+    color: #fff;
+    writing-mode: vertical-lr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+
+
+}
+
+/*--- page 2 ---*/
+
+
+div.top_bar {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+    background-image: url(../image/door.jpeg);
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: cover;
+}
+
+/* --- 왼쪽 버튼 --- */
+
+div.top_left {
+    background-image: url(../image/door.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 50%;
+    position: relative;
+    left: 10%;
+
+
+}
+
+div.bottom_left {
+    width: 333;
+    height: 123;
+    position: relative;
+    top: 130px;
+    left: 600px;
+
+
+}
+
+div.bottom_left {
+    line-height: 50%;
+
+
+}
+
+/* --- 왼쪽 호버 --- */
+
+div.top_left {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+
+
+}
+
+div.top_left:hover {
+    opacity: .5;
+    display: block;
+
+}
+
+
+/* --- 왼쪽 텍스트 호버 --- */
+
+.hover_txt_left h1 {
+    opacity: 0;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.hover_txt_left h1 {
+    font-size: 250%;
+    color: #05080d;
+}
+
+div.top_left:hover>.hover_txt_left h1 {
+    opacity: 1;
+}
+
+.hover_txt_left {
+    position: absolute;
+
+    top: 50%;
+
+    left: 43%;
+
+    margin: -50px 0 0 -50px;
+
+}
+
+/* --- 오른쪽 버튼 --- */
+
+div.top_right {
+    background-image: url(../image/door.jpg);
+    background-size: cover;
+    width: 25%;
+    height: 50%;
+    position: relative;
+    left: 65%;
+    bottom: 35%;
+}
+
+div.bottom_right {
+    width: 333;
+    height: 123;
+    position: relative;
+    top: 459px;
+    left: -217px;
+}
+
+div.bottom_right {
+    line-height: 50%;
+}
+
+/* --- 오른쪽 호버 --- */
+
+div.top_right {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+div.top_right:hover {
+    opacity: .5;
+}
+
+/* --- 오른쪽 텍스트 호버 --- */
+
+.hover_txt_right h1 {
+    opacity: 0;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.hover_txt_right h1 {
+    font-size: 250%;
+    color: #05080d;
+}
+
+div.top_right:hover>.hover_txt_right h1 {
+    opacity: 1;
+}
+
+.hover_txt_right {
+    position: absolute;
+
+    top: 50%;
+
+    left: 43%;
+
+    margin: -50px 0 0 -50px;
+
+}
+
+
+
+
+/* --- 폰트 규격 --- */
+
+h1 {
+    font-size: 3.4em;
+    font-weight: 700;
+}
+
+span {
+    font-size: 1.5em;
+    color: #727272;
+}

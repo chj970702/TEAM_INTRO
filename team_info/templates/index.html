@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>스프링의 웹단속 || 홈페이지</title>
+
+    <!--사이트 기본설정-->
+    <meta name="description" content="스프링의 웹단속">
+    <meta name="keywords" content="스프링의 웹단속">
+    <meta name="author" content="김도형, 박현규, 오세창, 정민재, 최혁진">
+
+    <!--Viewport-->
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum=scale=1.0, minimum=scale-1.0">
+
+    <!--(IE10)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Nomalize -->
+    <link ref="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+
+    <!-- 파비콘 -->
+    <link rel="icon" href="../static/image/daijin.ico" type="image/x-icon" sizes="16x16">
+
+    <!--load CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/pageable@latest/dist/pageable.min.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+
+</head>
+
+<body>
+    <div id="container">
+
+        <!-- page 1 -->
+        <section data-anchor="page 1" id="page-1">
+            <!-- <audio controls autoplay>
+                <source src="../static/audio/Suzume.mp3" type="audio/mp3" allow="autoplay" onloadstart="this.volume=0.5;">
+            </audio> -->
+            <div id="title">
+
+                <h3 class="camp"> 스프링 6기 B반 3조</h4>
+                    <h1 class="spring"> 스프링의 웹단속</h1>
+                    <div id="subtitle">
+                        <h4 class="test_3"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;폼 미쳤따이</h4>
+                        <h4 class="test_4">자바 스프링</h4>
+                    </div>
+        </section>
+
+
+        <!-- page 2 -->
+        <section data-anchor="page 2" id="page-2">
+            <div class="top_bar"></div>
+
+            <!-- left -->
+            <div class="top_left" onclick="window.location.href='/member_card'">
+                <div class="hover_txt_left">
+                    <h1 class="hover_txt">READ MORE</h1>
+                </div>
+                <div class="bottom_left">
+                    <h1>PROFILE</h1>
+                    <span>팀원들의 프로필을 확인해보세요</span>
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="top_right" onclick="window.location.href='/visit_comment'">
+                <div class="hover_txt_right">
+
+                    <h1>READ MORE</h1>
+                </div>
+                <div class="bottom_right">
+                    <h1>GUEST BOOK</h1>
+                    <span>방명록을 남겨주세요</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!--script-->
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <script src="../static/js/index.js"></script>
+</body>
+
+</html>

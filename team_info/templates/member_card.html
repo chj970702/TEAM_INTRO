@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>스프링의 웹단속 || 팀원소개카드</title>
+
+   <!-- 파비콘 -->
+   <link rel="icon" href="../static/image/daijin.ico" type="image/x-icon" sizes="16x16">
+   <!-- jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <!-- css -->
+   <link rel="stylesheet" href="../static/css/member_card.css">
+   <!-- js -->
+   <script src="../static/js/member_card.js"></script>
+
+   <script>
+      $(document).ready(function () {
+             show_order();
+         });
+         function show_order() {
+             fetch('/member_detail').then((res) => res.json()).then((data) => {
+                 let rows = data['result']
+                 console.log(rows)
+                 $('.cards').empty()
+                 
+                 rows.forEach((a)=>{
+                   let name = a['name']
+                   let desc = a['desc']
+                   let image = a['image_num']
+ 
+                   let temp_html =`<section>
+                                     <img src="../static/image/${image}.jpg" alt="이름아이콘">
+                                     <h3>${name}</h3>
+                                     <p>${desc}</p>
+                                     <a href="/member_detail/${image}" title="팀원소개"><span class="hidden">최혁진 소개 페이지로 이동하기</span></a>
+                                  </section>`
+                   $('.cards').append(temp_html)
+                 })
+             })
+         }      
+    </script>
+</head>
+
+<body>
+   <article class="wrap">
+
+      <div class="top_image">
+         <header>
+            <h1 onclick="window.location.href='/'"><span>팀원 소개 페이지</span>스프링의 웹단속</h1>
+            <p class="subtitle">대한민국의 IT 산업 선두에 있을 5명의 남자</p>
+         </header>
+      </div>
+      <section class="flexbox">
+         <article class="cards">
+
+            <section>
+               <img src="../static/image/choi.jpg" alt="이름아이콘">
+               <h3>최혁진</h3>
+               <p>스프링의 웹단속<br> 화이팅!!</p>
+               <a href="/member_detail" target="_blank" title="팀원소개"><span class="hidden">최혁진 소개 페이지로 이동하기</span></a>
+            </section>
+            <section>
+               <img src="../static/image/kim.jpg" alt="이름아이콘">
+               <h3>김도형</h3>
+               <p>다 같이 화이팅!!</p>
+               <a href="/member_detail" target="_blank" title="팀원소개"><span class="hidden">김도형 소개 페이지로 이동</span></a>
+            </section>
+            <section>
+               <img src="../static/image/park.jpg" alt="이름아이콘">
+               <h3>박현규</h3>
+               <p>포기하지 않고 <br>다같이 화이팅</p>
+               <a href="/member_detail" target="_blank" title="팀장소개"><span class="hidden">박현규 소개 페이지로 이동</span></a>
+            </section>
+            <section>
+               <img src="../static/image/oh.jpg" alt="이름아이콘">
+               <h3>오세창</h3>
+               <p>코딩 고수가<br> 되고 싶습니다</p>
+               <a href="/member_detail" target="_blank" title="팀원소개"><span class="hidden">오세창 소개 페이지로 이동</span></a>
+            </section>
+            <section>
+               <img src="../static/image/jeong.jpg" alt="이름아이콘">
+               <h3>정민재</h3>
+               <p>수료까지 모두<br>파이팅!</p>
+               <a href="/member_detail" target="_blank" title="팀원소개"><span class="hidden">정민재 소개 페이지로 이동</span></a>
+            </section>
+
+         </article>
+      </section>
+   </article>
+</body>
+
+</html>
